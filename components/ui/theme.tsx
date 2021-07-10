@@ -176,7 +176,7 @@ export const theme = extendTheme({
     },
   },
 });
-
+//@ts-ignore
 export const getTagColor = type => {
   type = type.toLowerCase()
   if (type === "rails" || type === "ruby") {
