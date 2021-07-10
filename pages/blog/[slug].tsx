@@ -125,6 +125,7 @@ const NotebookPost = () => {
       </HStack>
 
       <Box height={["35vh", "45vh", "55vh", "70vh"]} marginTop={5}>
+        {/*//@ts-ignore*/}
         <Carousel images={post.images} />
       </Box>
       <VStack spacing={5} align={"start"} mt={6}>
