@@ -8,7 +8,7 @@ import { MotionBox } from "../../components/ui/motion";
 import Meta from '../../components/layout/meta';
 
 const TURQUOISE = "#06b6d4";
-
+//@ts-ignore
 const Posts = ({ articles }) => {
   return (
     <Fragment>
@@ -19,6 +19,7 @@ const Posts = ({ articles }) => {
       </Header>
         <StaggerChildren>
           <Stack spacing={4} mt={12}>
+           {/*//@ts-ignore */}
             {articles.map((article, index) => (
               <MotionBox whileHover={{ y: -5 }} key={index}>
                 <PostCard article={article} />
