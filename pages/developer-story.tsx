@@ -2,7 +2,7 @@ import * as React from "react";
 import MyStory from "../components/developer-story/story";
 import { companies, institutes } from "../data/data";
 import Meta from '../components/layout/meta';
-
+//@ts-ignore
 const Index = ({ companies, institutes }) => {
   return (
     <React.Fragment>
