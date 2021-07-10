@@ -4,12 +4,13 @@ import { PageSlideFade, StaggerChildren } from "../ui/page-transitions";
 // import { repositories } from "../../data/repositories";
 import RepositoryCard from "./offline-data-card";
 import { MotionBox } from "../ui/motion";
-
+//@ts-ignore
 const OfflineData = ({ repositories }) => {
   return (
     <PageSlideFade>
       <StaggerChildren>
         <SimpleGrid columns={[2, 2, 3]} spacing={4} mt={12}>
+          {/*//@ts-ignore*/}
           {repositories.map((repo, index) => (
             <MotionBox whileHover={{ y: -5 }} key={index}>
               <RepositoryCard
