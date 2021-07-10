@@ -15,7 +15,7 @@ import { BsFillBriefcaseFill } from "react-icons/bs";
 import Header from "../layout/header";
 import Section from "../skills/section";
 import { PageSlideFade } from "../ui/page-transitions";
-
+//@ts-ignore
 const MyStory = ({ companies, institutes }) => {
 
   return (
@@ -31,14 +31,16 @@ const MyStory = ({ companies, institutes }) => {
       </Section>
       <VStack textAlign="start" align="flex-start" mb={0}>
         <Box>
+          
           <StoryTimeline year={"2021"} index={0} />
+          {/*//@ts-ignore */}
           {companies.map((company, index) => (
             <StoryTimeline
               icon={BsFillBriefcaseFill}
               index={index}
               key={index}
             >
-              {" "}
+              
               <HStack>
                 <Image
                   rounded="full"
@@ -65,6 +67,7 @@ const MyStory = ({ companies, institutes }) => {
             </StoryTimeline>
           ))}
           <StoryTimeline year={"2017"} index={0} />
+           {/*//@ts-ignore */}
           {institutes.map((institute, index) => (
             <>
               <StoryTimeline
@@ -96,8 +99,8 @@ const MyStory = ({ companies, institutes }) => {
                 <Divider my={2} />
                 <Text fontSize={[12, 13, 15]}>{institute.role}</Text>
               </StoryTimeline>
-              {institute.awards &&
-                institute.awards.map((award, index1) => (
+               {/*//@ts-ignore */}
+              {institute.awards && institute.awards.map((award, index1) => (
                   <StoryTimeline icon={FaAward} index={index1 + index + 1} key={index1}>
                     {" "}
                     <HStack>
