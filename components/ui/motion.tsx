@@ -8,7 +8,9 @@ import {
 import { motion, isValidMotionProp } from "framer-motion";
 
 export const MotionBox = motion(
+  //@ts-ignore
   forwardRef((props, ref) => {
+    //@ts-ignore
     const chakraProps = Object.fromEntries(
       // do not pass framer props to DOM element
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))
@@ -17,6 +19,7 @@ export const MotionBox = motion(
   })
 );
 export const MotionFlex = motion(
+  //@ts-ignore
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(
       // do not pass framer props to DOM element
@@ -27,6 +30,7 @@ export const MotionFlex = motion(
 );
 
 export const MotionImage = motion(
+  //@ts-ignore
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(
       Object.entries(props).filter(([key]) => !isValidMotionProp(key))

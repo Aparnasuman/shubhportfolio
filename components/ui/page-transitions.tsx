@@ -55,11 +55,11 @@ export const item = {
     opacity: 1
   }
 };
-
+//@ts-ignore
 export const PageSlideFade = ({ children }) => {
   return <SlideFade in>{children}</SlideFade>;
 };
-
+//@ts-ignore
 export const StaggerChildren = ({ children }) => {
   return (
     <MotionBox
@@ -73,7 +73,7 @@ export const StaggerChildren = ({ children }) => {
     </MotionBox>
   );
 };
-
+//@ts-ignore
 export const CardTransition = ({ children }) => {
   return <MotionBox variants={variants}>{children}</MotionBox>;
 };

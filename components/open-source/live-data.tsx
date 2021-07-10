@@ -6,7 +6,7 @@ import { PageSlideFade } from "../ui/page-transitions";
 import RepositoryCard from "./live-data-card";
 import StackGrid from "react-stack-grid";
 import CardSkeleton from "./card-skeleton";
-
+//project live
 const LiveData = () => {
   const { get, loading, error, data } = useFetch("https://api.github.com");
   const [repos, setRepos] = useState([]);
@@ -27,6 +27,7 @@ const LiveData = () => {
   useEffect(() => {
     get("/users/sshubhamk1/repos").then(res => {
       setRepos(
+      //@ts-ignore
         res?.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 8)
       );
     });
@@ -44,12 +45,18 @@ const LiveData = () => {
             {repos?.map((repo, index) => (
               <RepositoryCard
                 key={index}
+                //@ts-ignore
                 title={repo.name}
+                //@ts-ignore
                 description={repo.description}
+                //@ts-ignore
                 language={repo.language}
+                //@ts-ignore
                 url={repo.svn_url}
                 // created_at={repo.created_at}
+                //@ts-ignore
                 stargazers_count={repo.stargazers_count}
+                //@ts-ignore
                 forks_count={repo.forks_count}
               />
             ))}

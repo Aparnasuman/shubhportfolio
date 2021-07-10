@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ChakraProvider>
   )
 }
-
+//@ts-ignore
 MyApp.getInitialProps = async (appContext) => {
   const appProps = await App.getInitialProps(appContext);
   return { ...appProps };

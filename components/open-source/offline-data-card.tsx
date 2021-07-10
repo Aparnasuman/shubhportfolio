@@ -78,6 +78,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
     exit: {
       scale: 0.5,
       opacity: 0,
+      //@ts-ignore
       transition: { duration: 1.5, ...transition }
     }
   };

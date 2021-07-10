@@ -13,7 +13,7 @@ import { usePalette } from "react-palette";
 import { MotionBox } from "../ui/motion";
 import { item } from "../ui/page-transitions";
 import NextLink from 'next/link';
-
+//@ts-ignore
 const SkillCard = ({ name, image, link, description }) => {
   const { data, loading } = usePalette(image);
 

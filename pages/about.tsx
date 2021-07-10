@@ -112,7 +112,7 @@ const Card = (props: CardProps) => {
     </CardTransition>
   );
 };
-
+//@ts-ignore
 const About = ({ companies, institutes }) => {
   const { colorMode } = useColorMode();
 
@@ -134,6 +134,7 @@ const About = ({ companies, institutes }) => {
             </Heading>
           </MotionBox>
           <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+            {/*//@ts-ignore*/}
             {companies.map((company, index) => (
               <MotionBox whileHover={{ y: -5 }} key={index}>
                 <Card
@@ -159,6 +160,7 @@ const About = ({ companies, institutes }) => {
             </Flex>
           </Heading>
           <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+            {/*//@ts-ignore*/}
             {institutes.map((institute, index) => (
               <MotionBox whileHover={{ y: -5 }} key={index}>
                 <Card

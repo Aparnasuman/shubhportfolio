@@ -19,6 +19,7 @@ const LazyImage = (props: LazyImageProps) => {
 
   return (
     <ProgressiveImage delay={500} src={src} placeholder={placeholder}>
+      {/*//@ts-ignore*/}
       {(src, loading) => {
         return loading ? (
           <BlurhashCanvas
