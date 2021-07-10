@@ -23,7 +23,7 @@ const iconProps = {
   size: "md",
   isRound: true
 };
-
+//@ts-ignore
 const RepositoriesList = ({ repositories }) => {
   const [activeTab, setActiveTab] = React.useState("live");
 
@@ -34,7 +34,7 @@ const RepositoriesList = ({ repositories }) => {
       off: [500, 300]
     }
   });
-
+//@ts-ignore
   const handleClick = (type) => {
     activeTab === "live" ? play({ id: "on" }) : play({ id: "off" });
     setActiveTab(type)
@@ -53,6 +53,7 @@ const RepositoriesList = ({ repositories }) => {
               <Tooltip hasArrow label="Live github repos" placement="top">
                 <IconButton
                   aria-label={"live"}
+                  //@ts-ignore
                   size="md"
                   colorScheme={"linkedin"}
                   icon={<RiSignalTowerLine />}
@@ -64,6 +65,7 @@ const RepositoriesList = ({ repositories }) => {
               <Tooltip hasArrow label="Local github repos" placement="top">
                 <IconButton
                   aria-label={"live"}
+                  //@ts-ignore
                   size="md"
                   colorScheme={"linkedin"}
                   icon={<RiWifiOffLine />}
