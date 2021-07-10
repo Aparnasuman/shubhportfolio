@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Box } from "@chakra-ui/react";
 import TopNav from "./top-nav";
 import Footer from "./footer";
-
+ {/*//@ts-ignore */}
 function Layout(props) {
     return (
         <Fragment>

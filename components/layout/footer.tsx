@@ -69,6 +69,7 @@ const Footer = () => {
               isExternal
               href={sc.url}
               aria-label={sc.label}
+              /*//@ts-ignore */
               size="lg"
               colorScheme={sc.type}
               icon={sc.icon}

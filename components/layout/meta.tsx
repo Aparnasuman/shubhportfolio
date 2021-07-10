@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+ {/*//@ts-ignore */}
 const Meta = ({ title, keywords, description }) => {
     return (
         <Head>
